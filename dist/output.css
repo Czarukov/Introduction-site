@@ -16,7 +16,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: #e5e7eb;
+  border-color: currentColor;
   /* 2 */
 }
 
@@ -44,7 +44,7 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Graphik, sans-serif;
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -534,15 +534,52 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.flex {
+  display: flex;
 }
 
-.font-bold {
-  font-weight: 700;
+.w-screen {
+  width: 100vw;
 }
 
-.underline {
-  text-decoration-line: underline;
+.gap-5 {
+  gap: 1.25rem;
+}
+
+.self-center {
+  align-self: center;
+}
+
+.bg-dablue {
+  --tw-bg-opacity: 1;
+  background-color: rgb(32 60 86 / var(--tw-bg-opacity));
+}
+
+.bg-dadarkblue {
+  --tw-bg-opacity: 1;
+  background-color: rgb(13 43 69 / var(--tw-bg-opacity));
+}
+
+.p-5 {
+  padding: 1.25rem;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-daskin {
+  --tw-text-opacity: 1;
+  color: rgb(255 212 163 / var(--tw-text-opacity));
+}
+
+.text-dawhite {
+  --tw-text-opacity: 1;
+  color: rgb(255 236 214 / var(--tw-text-opacity));
 }
