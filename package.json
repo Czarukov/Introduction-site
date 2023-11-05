@@ -9,6 +9,6 @@
   "author": "Czaruko",
   "license": "ISC",
   "devDependencies": {
-    "tailwindcss": "^3.3.4"
+    "tailwindcss": "^3.3.5"
   }
 }
