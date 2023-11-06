@@ -4,14 +4,10 @@ module.exports = {
   theme: {
     extend: {},
     colors: {
-      'dadarkblue': '#0d2b45',
-      'dablue': '#203c56',
-      'dadarkpurple': '#544e68',
-      'dapurple': '#8d697a',
-      'dabrown': '#d08159',
-      'daorange': '#ffaa5e',
-      'daskin': '#ffd4a3',
-      'dawhite': '#ffecd6',
+      'da-czaruk-black': '#292524',
+      'da-czaruk-dark-gray': '#44403c',
+      'da-czaruk-light-gray': '#a8a29e',
+      'da-czaruk-white': '#fffbeb'
     },
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],
