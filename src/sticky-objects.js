@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <div
       class="flex w-[1200px] m-auto text-da-czaruk-white justify-between items-center"
     >
-      <a href="index.html" class="text-4xl p-5 font-bold flex-none">
+      <a href="index.html" class="text-4xl font-bold flex-none">
         <img src="/assets/Logo.png" class="w-[50px] h-[50px] inline" alt="" />
         Czaruko
       </a>
@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <a href="contact.html" class="p-3"> Contact </a>
       </div>
     </div>
-  </nav>` + this.body.innerHTML;
+  </nav>` 
+  + this.body.innerHTML;
 });
 

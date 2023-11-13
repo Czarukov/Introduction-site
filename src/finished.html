@@ -5,17 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/dist/output.css" rel="stylesheet" />
     <title>Czaruk - Finished Projects</title>
+    <script defer src="sticky-objects.js"></script>
   </head>
   <body class="bg-da-czaruk-black">
     <div
       id="blogpost-holder"
-      class="container flex flex-row-reverse gap-y-[15px] text-da-czaruk-white p-10 w-[1200px] mx-auto"
-    ></div>
+      class="container flex flex-col-reverse gap-y-[15px] text-da-czaruk-white p-[50px] w-[1200px] mx-auto"
+    >
+      <template id="blogpost-template">
+        <a href="https://czaruk.itch.io/outgrown" class="blogpost flex">
+          <img
+            src="/assets/Outgrown.png"
+            alt=""
+            class="blogpost-img h-[200px] w-[320px] rounded-l-[10px]"
+          />
+          <div
+            class="h-[200px] w-[880px] bg-da-czaruk-dark-gray shadow-2xl shadow-da-czaruk-black rounded-r-[10px] inline p-[15px]"
+          >
+            <div class="blogpost-name text-3xl font-bold"></div>
+            <div class="blogpost-contents text-justify"></div>
+          </div>
+        </a>
+      </template>
+    </div>
+    <script>
+      const holder = document.getElementById("blogpost-holder");
+      const temp = document.querySelector("#blogpost-template");
+      function createBlogpost(gameLink, gameImg, gameName, gameDesc) {
+        holder.appendChild(clone);
+      }
+      createBlogpost();
+    </script>
     <div id="name-page" hidden="">Finished Projects</div>
-    <template id="blogpost"></template>
-
-    <script src="sticky-objects.js"></script>
-
-    <script></script>
   </body>
 </html>
