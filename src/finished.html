@@ -10,23 +10,25 @@
   <body class="bg-da-czaruk-black">
     <div
       id="blogpost-holder"
-      class="container flex flex-col-reverse gap-y-[15px] text-da-czaruk-white p-[50px] w-[1200px] mx-auto"
+      class="container flex flex-col-reverse gap-y-[30px] text-da-czaruk-white p-[50px] w-[1200px] mx-auto"
     >
       <template id="blogpost-template">
         <a href="" class="blogpost flex shadow-xl shadow-da-czaruk-black">
           <div class="w-[320px]">
             <img
-                class="blogpost-img rounded-l-[10px] w-[320px] h-[200px]"
-                src="https://images.placeholders.dev/?width=320&height=200&text=Made%20with%20placeholders.dev&bgColor=%23f7f6f6&textColor=%236d6e71"
-                alt="Game Image"
+              class="blogpost-img rounded-l-[10px] w-[320px] h-[200px]"
+              src="https://images.placeholders.dev/?width=320&height=200&text=Made%20with%20placeholders.dev&bgColor=%23f7f6f6&textColor=%236d6e71"
+              alt="Game Image"
             />
           </div>
-          
+
           <div
             class="h-[200px] w-[880px] bg-da-czaruk-dark-gray rounded-r-[10px] inline p-[15px]"
           >
             <div class="blogpost-name text-3xl font-bold"></div>
-            <div class="blogpost-contents text-justify"></div>
+            <div
+              class="blogpost-contents text-justify leading-[27px] pr-[20px]"
+            ></div>
           </div>
         </a>
       </template>
@@ -34,24 +36,51 @@
     <script>
       const holder = document.getElementById("blogpost-holder");
       const template = document.getElementById("blogpost-template");
-      function createBlogPost(linkGame,imgGame,nameGame,descGame){
+      function createBlogPost(linkGame, imgGame, nameGame, descGame) {
         const clone = template.content.cloneNode(true);
         clone.querySelector("a").href = linkGame;
         clone.querySelector(".blogpost-img").src = imgGame;
-        clone.querySelector(".blogpost-name").textContent = nameGame;
-        clone.querySelector(".blogpost-contents").textContent = descGame;
-        holder.appendChild(clone);  
+        clone.querySelector(".blogpost-name").innerHTML = nameGame;
+        clone.querySelector(".blogpost-contents").innerHTML = descGame;
+        holder.appendChild(clone);
       }
-      
 
-      createBlogPost("https://czaruk.itch.io/phrogchamp","../assets/Phrogger.png","PhrogChamp","None yet");
-      createBlogPost("https://czaruk.itch.io/looprunner","../assets/GloopRunner.png","GloopRunner","None Yet");
-      createBlogPost("https://czaruk.itch.io/deep-seacrets","../assets/DeepSeacrets.png"," Deep Seacrets","None Yet");
-      createBlogPost("https://czaruk.itch.io/inferno-clash","../assets/InfernalClash.png","Infernal Clash","None yet");
-      createBlogPost("https://thevoidvr.itch.io/the-arcade-a-stranger-things-experience","../assets/TheArcade.png","The Arcade: A Stranger Things Experience","None Yet");
-      createBlogPost("https://czaruk.itch.io/outgrown","../assets/Outgrown.png","Outgrown","None yet");
-
-
+      createBlogPost(
+        "https://czaruk.itch.io/phrogchamp",
+        "../assets/Phrogger.png",
+        "PhrogChamp",
+        "PhrogChamp is a <span class='text-da-czaruk-red'>difficult platformer</span> about climbing up a tree as a frog, the catch being ofcourse that every fall is a massive loss for progress. The game is short but challenging. The idea has been based on Jump King but with a bunch of twists. This game was made as a part of the <span class='text-da-czaruk-red'>MiniJam 79</span> with the theme being Frogs!"
+      );
+      createBlogPost(
+        "https://czaruk.itch.io/looprunner",
+        "../assets/GloopRunner.png",
+        "GloopRunner",
+        "GloopRunner is a <span class='text-da-czaruk-red'>speedrunning platformer</span> where YOU get to make your own levels that you have to speedrun. Place objects in the level in order to reach the top in the fastest time possible. This game was made as a part of the <span class='text-da-czaruk-red'>GMTK Game Jam 2023</span> with the theme of Roles Reversed"
+      );
+      createBlogPost(
+        "https://czaruk.itch.io/deep-seacrets",
+        "../assets/DeepSeacrets.png",
+        " Deep Seacrets",
+        "Deep Seacrets is an <span class='text-da-czaruk-red'>immersive horror game</span> you are a blind but still capable soldier, alone on a deep sea submarine, your only company being your commander over the communications system and the internal warning system. The game was made in two weeks as part of a <span class='text-da-czaruk-red'>school project</span>. The assignment was to make a game for people who are visually impaired or have no vision at all. So the main focus of the game is the sound design. My role was that of a <span class='text-da-czaruk-red'>programmer</span>."
+      );
+      createBlogPost(
+        "https://czaruk.itch.io/inferno-clash",
+        "../assets/InfernalClash.png",
+        "Infernal Clash",
+        "Infernal Clash is a <span class='text-da-czaruk-red'>two player versus game</span> where you need quick reflexes in order to dodge or deflect towards the enemy the ever-bouncing ball of flames. You get 90 seconds to get more points than the enemy and claim the hellish crown. This game was made in two weeks as part of a <span class='text-da-czaruk-red'>school project</span>. My roles were that of a <span class='text-da-czaruk-red'>programmer and a developer</span>."
+      );
+      createBlogPost(
+        "https://thevoidvr.itch.io/the-arcade-a-stranger-things-experience",
+        "../assets/TheArcade.png",
+        "The Arcade: A Stranger Things Experience",
+        'The Arcade is an <span class="text-da-czaruk-red">experience game</span> recreating a scene from the series Stranger Things known as "the trip to the arcade" which had unsettling enough of a feeling to inspire this project. This game was made in two weeks as part of a <span class="text-da-czaruk-red">school project</span>. My roles were that of a <span class="text-da-czaruk-red">programmer and a developer</span>."'
+      );
+      createBlogPost(
+        "https://czaruk.itch.io/outgrown",
+        "../assets/Outgrown.png",
+        "Outgrown",
+        "Outgrown is a <span class='text-da-czaruk-red'>relaxing puzzle game</span> focusing on growth of plants and the beauty of their life cycle. In outgrown players can place down plants on a grid and by doing so all other plants will age, showing their unique characteristics. It is a project made as a part of my <span class='text-da-czaruk-red'>Master's Degree project</span> and every piece of it is handcrafted by me."
+      );
     </script>
     <div id="name-page" hidden="">Finished Projects</div>
   </body>

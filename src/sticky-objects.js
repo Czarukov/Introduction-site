@@ -6,14 +6,14 @@ document.addEventListener('DOMContentLoaded', function() {
     <div
       class="flex w-[1200px] m-auto text-da-czaruk-white justify-between items-center"
     >
-      <a href="index.html" class="text-4xl font-bold flex-none">
+      <a href="../index.html" class="text-4xl font-bold flex-none">
         <img src="../assets/Logo.png" class="w-[50px] h-[50px] inline" alt="" />
         Czaruko
       </a>
       <div class="text-xl text-right inline flex-none">
-        <a href="blog.html" class="p-3"> Studies </a>
-        <a href="finished.html" class="p-3"> Finished </a>
-        <a href="contact.html" class="p-3"> Contact </a>
+        <a href="/src/blog.html" class="p-3"> Studies </a>
+        <a href="/src/finished.html" class="p-3"> Finished </a>
+        <a href="/src/contact.html" class="p-3"> Contact </a>
       </div>
     </div>
   </nav>` 
