@@ -23,7 +23,10 @@
       class="container flex flex-col-reverse gap-y-[30px] text-da-czaruk-white py-[50px] w-[1200px] mx-auto"
     >
       <template id="blogpost-template">
-        <a href="" class="blogpost flex shadow-xl shadow-da-czaruk-black">
+        <a
+          href=""
+          class="blogpost flex shadow-xl shadow-da-czaruk-black transition duration-75 hover:scale-105"
+        >
           <div class="w-[400px]">
             <img
               class="blogpost-img rounded-l-[10px] w-[400px] h-[200px]"
@@ -43,6 +46,8 @@
         </a>
       </template>
     </div>
+    <div id="name-page" hidden="">Finished</div>
+
     <script>
       const holder = document.getElementById("blogpost-holder");
       const template = document.getElementById("blogpost-template");
@@ -92,7 +97,6 @@
         "Outgrown is a <span class='text-da-czaruk-red'>relaxing puzzle game</span> focusing on growth of plants and the beauty of their life cycle. In outgrown players can place down plants on a grid and by doing so all other plants will age, showing their unique characteristics. It is a project made as a part of my <span class='text-da-czaruk-red'>Master's Degree project</span> and every piece of it is handcrafted by me."
       );
     </script>
-    <div id="name-page" hidden="">Finished Projects</div>
     <script src="sticky-objects.js"></script>
   </body>
 </html>
