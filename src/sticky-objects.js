@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     `<nav
     class="flex justify-center bg-da-czaruk-black p-5 sticky top-0 left-0 shadow-2xl h-[100px]">
     <div class="flex w-[1200px] m-auto text-da-czaruk-white justify-between items-center">
-      <a href="../index.html" class="text-4xl font-bold flex-none">
+      <a href="../" class="text-4xl font-bold flex-none">
         <img src="../assets/Logo.png" class="w-[50px] h-[50px] inline" alt="" />
         Czaruko
       </a>
