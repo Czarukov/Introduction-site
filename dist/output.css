@@ -637,6 +637,14 @@ video {
   width: 880px;
 }
 
+.w-full {
+  width: 100%;
+}
+
+.w-\[400px\] {
+  width: 400px;
+}
+
 .flex-none {
   flex: none;
 }
@@ -671,6 +679,10 @@ video {
 
 .gap-\[10px\] {
   gap: 10px;
+}
+
+.gap-\[15px\] {
+  gap: 15px;
 }
 
 .gap-y-\[30px\] {
@@ -713,8 +725,17 @@ video {
   padding: 50px;
 }
 
+.py-\[50px\] {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 .pr-\[20px\] {
   padding-right: 20px;
+}
+
+.pt-\[50px\] {
+  padding-top: 50px;
 }
 
 .text-center {
