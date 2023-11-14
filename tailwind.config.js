@@ -16,7 +16,8 @@ module.exports = {
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
-      raleway: ['Raleway', 'sans-serif']
+      raleway: ['Raleway', 'sans-serif'],
+      open: ['Open Sans', 'sans-serif']
     },
   },
   plugins: [],

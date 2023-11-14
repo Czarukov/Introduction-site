@@ -10,10 +10,63 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
     <title>Czaruk - Contact</title>
   </head>
   <body class="bg-da-czaruk-black font-raleway">
+    <div
+      id="contacts-holder"
+      class="container flex flex-wrap justify-between text-da-czaruk-white p-[50px] w-[1200px] mx-auto gap-[100px]"
+    >
+      <template id="contact-template">
+        <a
+          href=""
+          class="flex flex-col gap-[10px] shadow-xl shadow-da-czaruk-black"
+        >
+          <div class="w-[200px] h-[200px]">
+            <img
+              class="contact-img w-[200px] h-[200px]"
+              src="https://images.placeholders.dev/?width=320&height=200&text=Made%20with%20placeholders.dev&bgColor=%23f7f6f6&textColor=%236d6e71"
+              alt="Contact Image"
+            />
+          </div>
+
+          <div
+            class="contact-name text-2xl font-bold text-center h-[50px] w-[200px] justify-center"
+          ></div>
+        </a>
+      </template>
+    </div>
     <div id="name-page" hidden="">Contact</div>
     <script src="sticky-objects.js"></script>
+    <script>
+      const holder = document.getElementById("contacts-holder");
+      const template = document.getElementById("contact-template");
+      function createContact(linkSite, imgSite, nameSite) {
+        const clone = template.content.cloneNode(true);
+        clone.querySelector("a").href = linkSite;
+        clone.querySelector(".contact-img").src = imgSite;
+        clone.querySelector(".contact-name").innerHTML = nameSite;
+        holder.appendChild(clone);
+      }
+      createContact(
+        "https://github.com/Czarukov",
+        "../assets/github.png",
+        "GitHub"
+      );
+      createContact(
+        "https://czaruk.itch.io",
+        "../assets/itch.png",
+        "Czaruk.itch.io"
+      );
+      createContact(
+        "https://www.linkedin.com/in/czarek-mildner-9259a1253/",
+        "../assets/linkedin.png",
+        "LinkedIn"
+      );
+    </script>
   </body>
 </html>
