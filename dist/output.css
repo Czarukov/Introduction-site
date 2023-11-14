@@ -434,10 +434,6 @@ video {
   display: none;
 }
 
-html {
-  font-family: 'Raleway', sans-serif;
-}
-
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -713,10 +709,6 @@ html {
   padding: 50px;
 }
 
-.pr-\[\] {
-  padding-right: ;
-}
-
 .pr-\[20px\] {
   padding-right: 20px;
 }
@@ -727,6 +719,10 @@ html {
 
 .text-justify {
   text-align: justify;
+}
+
+.font-raleway {
+  font-family: Raleway, sans-serif;
 }
 
 .text-3xl {
@@ -746,38 +742,6 @@ html {
 
 .font-bold {
   font-weight: 700;
-}
-
-.leading-relaxed {
-  line-height: 1.625;
-}
-
-.leading-\[\] {
-  line-height: ;
-}
-
-.leading-\[10px\] {
-  line-height: 10px;
-}
-
-.leading-\[100px\] {
-  line-height: 100px;
-}
-
-.leading-\[50px\] {
-  line-height: 50px;
-}
-
-.leading-\[20px\] {
-  line-height: 20px;
-}
-
-.leading-\[30px\] {
-  line-height: 30px;
-}
-
-.leading-\[25px\] {
-  line-height: 25px;
 }
 
 .leading-\[27px\] {
