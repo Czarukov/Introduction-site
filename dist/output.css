@@ -580,6 +580,26 @@ video {
   top: 0px;
 }
 
+.top-\[\] {
+  top: ;
+}
+
+.top-\[100px\] {
+  top: 100px;
+}
+
+.top-\[200px\] {
+  top: 200px;
+}
+
+.top-\[00px\] {
+  top: 00px;
+}
+
+.top-\[300px\] {
+  top: 300px;
+}
+
 .m-auto {
   margin: auto;
 }
@@ -587,6 +607,34 @@ video {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.mt-\[100px\] {
+  margin-top: 100px;
+}
+
+.mt-\[60px\] {
+  margin-top: 60px;
+}
+
+.mt-\[50px\] {
+  margin-top: 50px;
+}
+
+.mt-\[70px\] {
+  margin-top: 70px;
+}
+
+.mt-\[px\] {
+  margin-top: px;
+}
+
+.mt-\[150px\] {
+  margin-top: 150px;
+}
+
+.mb-\[10px\] {
+  margin-bottom: 10px;
 }
 
 .inline {
@@ -637,8 +685,24 @@ video {
   width: 100%;
 }
 
+.w-\[\] {
+  width: ;
+}
+
+.w-\[300\] {
+  width: 300;
+}
+
+.w-\[300px\] {
+  width: 300px;
+}
+
 .flex-none {
   flex: none;
+}
+
+.flex-row {
+  flex-direction: row;
 }
 
 .flex-col {
@@ -651,6 +715,10 @@ video {
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap;
 }
 
 .items-center {
@@ -677,8 +745,36 @@ video {
   gap: 15px;
 }
 
+.gap-0 {
+  gap: 0px;
+}
+
+.gap-\[\] {
+  gap: ;
+}
+
+.gap-\[-\] {
+  gap: -;
+}
+
+.gap-\[-30px\] {
+  gap: -30px;
+}
+
+.gap-\[-50px\] {
+  gap: -50px;
+}
+
+.gap-\[-100px\] {
+  gap: -100px;
+}
+
 .gap-y-\[30px\] {
   row-gap: 30px;
+}
+
+.self-center {
+  align-self: center;
 }
 
 .text-ellipsis {
@@ -717,9 +813,22 @@ video {
   padding: 15px;
 }
 
+.p-\[100px\] {
+  padding: 100px;
+}
+
+.p-\[30px\] {
+  padding: 30px;
+}
+
 .py-\[50px\] {
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.py-\[30px\] {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .pr-\[20px\] {
@@ -765,9 +874,38 @@ video {
   line-height: 2.5rem;
 }
 
+.text-\[100px\] {
+  font-size: 100px;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-\[150px\] {
+  font-size: 150px;
+}
+
+.text-\[155px\] {
+  font-size: 155px;
+}
+
+.text-\[160px\] {
+  font-size: 160px;
+}
+
+.text-\[80px\] {
+  font-size: 80px;
+}
+
+.text-\[40px\] {
+  font-size: 40px;
 }
 
 .font-bold {
@@ -782,6 +920,10 @@ video {
   line-height: 27px;
 }
 
+.leading-tight {
+  line-height: 1.25;
+}
+
 .text-da-czaruk-red {
   --tw-text-opacity: 1;
   color: rgb(220 38 38 / var(--tw-text-opacity));
@@ -790,6 +932,18 @@ video {
 .text-da-czaruk-white {
   --tw-text-opacity: 1;
   color: rgb(255 251 235 / var(--tw-text-opacity));
+}
+
+.text-\[\] {
+  color: ;
+}
+
+.text-\[1\] {
+  color: 1;
+}
+
+.text-\[px\] {
+  color: px;
 }
 
 .underline {
