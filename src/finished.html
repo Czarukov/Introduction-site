@@ -52,7 +52,7 @@
       const holder = document.getElementById("blogpost-holder");
       const template = document.getElementById("blogpost-template");
       function createBlogPost(linkGame, imgGame, nameGame, descGame) {
-        kef;
+        const clone = template.content.cloneNode(true);
         clone.querySelector("a").href = linkGame;
         clone.querySelector(".blogpost-img").src = imgGame;
         clone.querySelector(".blogpost-name").innerHTML = nameGame;
